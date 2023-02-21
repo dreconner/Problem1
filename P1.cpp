@@ -12,12 +12,16 @@
 using namespace std;
 
 int main() {
-    
-    cout << "Enter a base value: ";
+    int base, exp, answer = 1;
+    cout << "Enter a base value:";
     cin >> base;
-    cout << "Enter an exponent value: ";
+    cout << "Enter an exponent value:";
     cin >> exp;
 
+    // Calculate the exponent value
+    for (int i = 0; i < exp; i++) {
+        answer *= base;
+    }
 
     cout << "Result is " << answer;
     return 0;
